@@ -20,7 +20,7 @@ class BBLX_APIDATA {
 	public function apiDataFetch($post){
 		$apiNames = 'overview,distribution,basket-exposures,holdings,total-return,performance&ticker='.$post->post_title;
 		$apiData = BBLX_STG_API_URL.'?apikey='.BBLX_STG_API_KEY.'&function='.$apiNames;
-		$curl = self::curlUrl($apiData);
+		$curl = $this->curlUrl($apiData);
 		return $curl;
 	}
 
@@ -36,10 +36,10 @@ class BBLX_APIDATA {
 	* Fetch the Premium Discount APIs data
 	*/
 	public function apiPremiumDiscount($post){
-		$time = self::getDateTime();
+		$time = $this->getDateTime();
 		$apiNames = 'premium-discount&ticker='.$post->post_title.'&date_gteq='.$time;
 		$apiPremiumData = BBLX_STG_API_URL.'?apikey='.BBLX_STG_API_KEY.'&function='.$apiNames;
-		$curl = self::curlUrl($apiPremiumData);
+		$curl = $this->curlUrl($apiPremiumData);
 		return $curl;
 	}
 
@@ -47,10 +47,10 @@ class BBLX_APIDATA {
 	* Fetch the Premium Discount Statistics APIs data
 	*/
 	public function apiPremiumDiscountStatistics($post){
-		$time = self::getDateTime();
+		$time = $this->getDateTime();
 		$apiNames = 'premium-discount-statistics&ticker='.$post->post_title.'&date_gteq='.$time;
 		$apiPremiumData = BBLX_STG_API_URL.'?apikey='.BBLX_STG_API_KEY.'&function='.$apiNames;
-		$curl = self::curlUrl($apiPremiumData);
+		$curl = $this->curlUrl($apiPremiumData);
 		return $curl;
 	}
 
@@ -89,7 +89,7 @@ class BBLX_APIDATA {
 	*/
 	public function performanceAnnualRecords($bblxApiData = [], $performance = ''){
 		$performanceAnnualNav = [];
-		$previousQuarter = self::getQuarterNumber();
+		$previousQuarter = $this->getQuarterNumber();
 		if(!empty($previousQuarter) && $performance === 'annual'){
 			$quarter = 'Q-1';
 		}else{
@@ -223,12 +223,12 @@ class BBLX_APIDATA {
 	* Get annual quarters for table column
 	*/
 	public function annualQuarter($bblxApiData = []){
-		$annualQuarter = self::performanceAnnualQuarter($bblxApiData);
+		$annualQuarter = $this->performanceAnnualQuarter($bblxApiData);
 		$annualQuarterArr = array_reverse($annualQuarter);
 		$i = 1;
 		foreach($annualQuarterArr as $val){
 			$currentQuarter = ceil(date('n') / 3);
-			$quarterEndDate = self::quarterEndDate($val->asof_date);
+			$quarterEndDate = $this->quarterEndDate($val->asof_date);
 			$previousQuarter = ($currentQuarter - $i + 4) % 4;
 			if ($previousQuarter === 0) {
 				$previousQuarter = 4;
@@ -254,14 +254,16 @@ class BBLX_APIDATA {
 			'close_performance_annualized' => 'Market Price',
 			'index_performance_annualized' => 'Index',
 		);
-		$performanceData   = self::performanceAnnualRecords($bblxApiData, $performace);
+		$performanceData   = $this->performanceAnnualRecords($bblxApiData, $performace);
 		foreach ($returnTable as $key => $value) {
 			$val = array('-','-','-','-');
 			$index = 0;
+			$trClass = $annualClass = '';
+			$position = ['wtd', 'mtd', 'qtd', 'ytd'];
 			if($performace === 'annual'){
 				$position = ['y1','y2','y3','inception'];
-			}else{
-				$position = ['wtd', 'mtd', 'qtd', 'ytd'];
+				$trClass = 'class="annual-records"';
+				$annualClass = 'class="performanceRes"';
 			}
 			
 			foreach ($position as $pos) {
@@ -279,12 +281,12 @@ class BBLX_APIDATA {
 			if($value === 'Index'){
 				$popupInfo = '';
 			}
-			$html[] = '<tr class="annual-records">
+			$html[] = '<tr '.$trClass.'>
 				<td class="">'.$value.$popupInfo.'</span></a></td>
-				<td class="performanceRes">'.$val[0].'</td>
-				<td class="performanceRes">'.$val[1].'</td>
-				<td class="performanceRes">'.$val[2].'</td>
-				<td class="performanceRes">'.$val[3].'</td>
+				<td '.$annualClass.'>'.$val[0].'</td>
+				<td '.$annualClass.'>'.$val[1].'</td>
+				<td '.$annualClass.'>'.$val[2].'</td>
+				<td '.$annualClass.'>'.$val[3].'</td>
 			</tr>';
 		}
 		return $response[] = $html;

@@ -112,7 +112,7 @@ class BBLX_ApiTableData {
 			),
 			
 		);
-	//echo "<pre>"; print_r($tableData);exit;
+	
 	return $tableData;
 	}
 

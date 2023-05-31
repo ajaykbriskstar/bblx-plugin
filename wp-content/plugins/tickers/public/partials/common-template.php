@@ -46,7 +46,6 @@ $distributionArr        = $bblxApi->distributionSortArray($distribution);
 
 $discountStatistics     = $bblxApi->apiPremiumDiscountStatistics($post);
 $discountStatisticsArr  = $bblxApi->premiumDiscountStatisticsTable($discountStatistics);
-//$cumulativeArr          = $bblxApi->performanCecumulativeNav($bblxApiData);
 $performenceDateArr     = $bblxApi->performanAsofDate($bblxApiData);
 
 $annualQuarterData      = $bblxApi->annualQuarter($bblxApiData);
@@ -107,7 +106,7 @@ if(!empty($totalReturn)){
         $totalReturnData[] = $val;
     }
 }
-//$holdings = $totalReturnData = $basketExposures = $premiumDiscountData = [];
+
 $holdingAsOfDate = $holdings[0]->as_of_date;
 $holdingAsOfDate = isset($holdingAsOfDate)?date('m/d/Y', strtotime($holdingAsOfDate)):"NA";
 
@@ -133,7 +132,6 @@ $aumSum = "$--";
 if(!empty($overview)){
     $asOfDate = isset($overview['asof_date'])?date('m/d/Y', strtotime($overview['asof_date'])):"NA";
     $sec_yield_asof_date = isset($overview['sec_yield_asof_date'])?date('m/d/Y', strtotime($overview['sec_yield_asof_date'])):"NA";
-    //$netExpenseRatio = number_format(($overview['net_expense_ratio']*100)).'%';
     $netExpenseRatio = floatval($overview['net_expense_ratio']*100);
     $charLength = strlen($netExpenseRatio);
     if($charLength == 3){
@@ -226,8 +224,6 @@ if($categoryName == 'Treasuries'){
                     <div class="bond_band">
                         <h4>Net asset value</h4>
                         <strong>$<?php echo isset($overview['nav'])?number_format($overview['nav'],2):"NA"; ?></strong>
-                        <?php /* <small>AS OF DATE <?php //echo $asOfDate; </small> */?>
-                        <!-- <small>ALL DATA AS OF <?php echo $asOfDate; ?>,</small><small> UNLESS OTHERWISE STATED</small> -->
                     </div>
                 </div>
                 <div class="bond_band_col">
@@ -333,11 +329,7 @@ if($categoryName == 'Treasuries'){
                                                         <td><?php echo $tableKey.$popup; ?></td>
                                                         <td><span><?php echo $tableVal; ?></span></td>
                                                     </tr>
-                                                <?php }
-                                                /* if($tableKey == 'NAIC Rating'){
-                                                    $popup = '<a href="javascript:void(0)" id="naic-iball"><span class="fas fa-info-circle infoIcon"></span></a>';
-                                                } */?>
-                                                
+                                                <?php } ?>
                                         <?php }
                                         }
                                     ?>

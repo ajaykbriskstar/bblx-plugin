@@ -119,7 +119,6 @@ class Tickers_Admin {
 	            'public' 		=> true,
 	            'has_archive' 	=> true,
 	            'rewrite' 		=> array('slug' => 'tickers', 'with_front' => false ,'pages'=>false,'feeds'=>false),
-	            //'show_in_rest' 	=> true,
 	            'supports'  	=> array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields' ),
 	            'taxonomies'          => array( 'category' ),
 	        );
