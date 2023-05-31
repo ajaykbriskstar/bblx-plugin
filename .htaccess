@@ -1,0 +1,126 @@
+
+
+# BEGIN WordPress
+# The directives (lines) between "BEGIN WordPress" and "END WordPress" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+# TN - START EXPIRES CACHING #
+<IfModule mod_expires.c>
+	ExpiresActive On
+	ExpiresByType text/css "access 1 month"
+	ExpiresByType text/html "access 1 month"
+	ExpiresByType image/gif "access 1 year"
+	ExpiresByType image/png "access 1 year"
+	ExpiresByType image/jpg "access 1 year"
+	ExpiresByType image/jpeg "access 1 year"
+	ExpiresByType image/x-icon "access 1 year"
+	ExpiresByType image/svg+xml "access plus 1 month"
+	ExpiresByType audio/ogg "access plus 1 year"
+	ExpiresByType video/mp4 "access plus 1 year"
+	ExpiresByType video/ogg "access plus 1 year"
+	ExpiresByType video/webm "access plus 1 year"
+	ExpiresByType application/atom+xml "access plus 1 hour"
+	ExpiresByType application/rss+xml "access plus 1 hour"
+	ExpiresByType application/pdf "access 1 month"
+	ExpiresByType application/javascript "access 1 month"
+	ExpiresByType text/x-javascript "access 1 month"
+	ExpiresByType text/x-component "access plus 1 month"
+	ExpiresByType application/x-shockwave-flash "access 1 month"
+	ExpiresByType font/opentype "access plus 1 month"
+	ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
+	ExpiresByType application/x-font-ttf "access plus 1 month"
+	ExpiresByType application/font-woff "access plus 1 month"
+	ExpiresByType application/font-woff2 "access plus 1 month"
+	ExpiresDefault "access 1 month"
+</IfModule>
+# TN - END EXPIRES CACHING #
+
+# TN - BEGIN Cache-Control Headers
+<ifModule mod_headers.c>
+<filesMatch "\.(ico|jpe?g|png|gif|swf)$">
+	Header set Cache-Control "public"
+</filesMatch>
+<filesMatch "\.(css)$">
+	Header set Cache-Control "public"
+</filesMatch>
+<filesMatch "\.(js)$">
+	Header set Cache-Control "private"
+</filesMatch>
+<filesMatch "\.(x?html?|php)$">
+	Header set Cache-Control "private, must-revalidate"
+</filesMatch>
+</ifModule>
+# TN - END Cache-Control Headers
+
+# TN – ENABLE MOD PAGESPEED START
+# COMBINE CSS, COMPRESS IMAGES, REMOVE HTML WHITE SPACE AND COMMENTS
+<IfModule pagespeed_module>
+	ModPagespeed on
+	ModPagespeedEnableFilters rewrite_css,combine_css
+	ModPagespeedEnableFilters recompress_images
+	ModPagespeedEnableFilters convert_png_to_jpeg,convert_jpeg_to_webp
+	ModPagespeedEnableFilters collapse_whitespace,remove_comments
+</IfModule>
+# TN – ENABLE MOD PAGESPEED END
+# BEGIN Cache-Control Headers
+<ifModule mod_headers.c>
+ <filesMatch "\.(ico|jpe?g|png|gif|swf)$">
+ 	Header set Cache-Control "max-age=2592000, public"
+ </filesMatch>
+ <filesMatch "\.(css)$">
+ 	Header set Cache-Control "max-age=604800, public"
+ </filesMatch>
+ <filesMatch "\.(js)$">
+ 	Header set Cache-Control "max-age=216000, private"
+ </filesMatch>
+ <filesMatch "\.(x?html?|php)$">
+ 	Header set Cache-Control "max-age=600, private, must-revalidate"
+ </filesMatch>
+</ifModule>
+# END Cache-Control Headers
+# BEGIN Speed Optimizer by 10Web
+# The directives (lines) between "BEGIN Speed Optimizer by 10Web" and "END Speed Optimizer by 10Web" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+
+  <IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Does browser explicitly support webp?
+    RewriteCond %{HTTP_USER_AGENT} Chrome [OR]
+    # OR Is request from Page Speed
+    RewriteCond %{HTTP_USER_AGENT} "Google Page Speed Insights" [OR]
+    # OR does this browser explicitly support webp
+    RewriteCond %{HTTP_ACCEPT} image/webp
+    # AND NOT MS EDGE 42/17 - doesnt work.
+    RewriteCond %{HTTP_USER_AGENT} !Edge/17
+    # AND is the request a jpg, png or gif?
+    RewriteCond %{REQUEST_URI} ^(.+)\.(?:jpe?g|png|gif)$
+    # AND does a .ext.webp image exist?
+    RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}.webp -f
+    # THEN send the webp image and set the env var webp
+    RewriteRule ^(.+)$ $1.webp [NC,T=image/webp,E=webp,L]
+  </IfModule>
+  
+  <IfModule mod_headers.c>
+    # If REDIRECT_webp env var exists, append Accept to the Vary header
+    Header append Vary Accept env=REDIRECT_webp
+  </IfModule>
+
+  <IfModule mod_mime.c>
+    AddType image/webp .webp
+  </IfModule>
+        
+# END Speed Optimizer by 10Web

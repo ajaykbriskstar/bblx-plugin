@@ -1,0 +1,18 @@
+.ticker-form {
+    box-shadow: 0px 25px 30px #00000014;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+}
+.ticker-form h2 {
+    margin: 0 0 20px 0;
+}
+.tickers {
+    padding: 40px 0px 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 98%;
+    flex-direction: row;
+    border-bottom: 1px solid #eee;
+}

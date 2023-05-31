@@ -1,0 +1,37 @@
+/*
+Separate Stylesheet
+Updated: 2023-02-03 04:14:15
+Theme Name: BonxBloxx Child
+Theme URI: https://elementor.com/hello-theme/?utm_source=wp-themes&utm_campaign=theme-uri&utm_medium=wp-dash
+Template: hello-elementor
+Author: Elementor Team
+Author URI: https://elementor.com/?utm_source=wp-themes&utm_campaign=author-uri&utm_medium=wp-dash
+Description: A plain-vanilla &amp; lightweight theme for Elementor page builder
+Tags: flexible-header,custom-colors,custom-menu,custom-logo,featured-images,rtl-language-support,threaded-comments,translation-ready
+Version: 2.4.1.1675415655
+*/
+
+/**
+ * Custom Css For Footer 
+ **/
+.bblx-footer-menu .elementor-nav-menu li a {
+  padding: 13px 19px !important;
+}
+
+
+@media (max-width: 767px){
+  .bblx_newsroom .elementor-column.elementor-col-25 {
+    width: 100%;
+  }
+  .bblx-product .elementor-966 .elementor-element.elementor-element-a5568c8 ul li:first-of-type {
+      display: block !important;
+  }
+}
+
+ul.bullet-points li{
+    font-family: "Roboto", Sans-serif !important;
+    color: #001d3a;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.8em;
+}

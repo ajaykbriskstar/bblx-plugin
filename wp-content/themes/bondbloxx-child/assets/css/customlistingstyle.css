@@ -1,0 +1,1003 @@
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body { font-family: "New Frank", Sans-serif, margin: 0; line-height: 1.5;}
+html {scroll-behavior: smooth;}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+
+/* Start custom CSS for html, class: .elementor-element-0a13309 */.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: auto;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchButton {
+  width: auto;
+  height: auto;
+  border: 1px solid #00B4CC;
+  text-align: center;
+  color: #24a5e0;
+  background-color: #ffffff;
+  border-radius: 0px;
+  cursor: pointer;
+  font-size: 20px;
+  border-left: 0px;
+  margin: 0px 0px 0px -1px;
+}
+
+.wrap{
+  width: 80%;
+  position: absolute;
+  top: 30%;
+  left: 59%;
+  transform: translate(-50%, 0%);
+}
+
+.search-input-box input[type=date], input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=url], select, textarea {
+    color: #000;
+    border-right: 0px;
+    border-radius: 0px !important;
+    border-color: #24a5e0;
+}
+
+.search-input-box input[type=date]:focus, input[type=email]:focus, input[type=number]:focus, input[type=password]:focus, input[type=search]:focus, input[type=tel]:focus, input[type=text]:focus, input[type=url]:focus, select:focus, textarea:focus {
+    border-color: #24a5e0;
+    outline: 0 none;
+    border-radius: 0px !important;
+}
+
+.search-input-box .searchButton [type=button]:focus, [type=button]:hover, [type=submit]:focus, [type=submit]:hover, button:focus, button:hover {
+    color: #fff;
+    background-color: #24a5e0;
+    text-decoration: none;
+    border: 1px solid #fff;
+    outline: none;
+    border-radius: 0px !important;
+}
+    
+@media (max-width: 575.98px) {
+    .wrap {
+        width: 90%;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .wrap {
+        width: 100%;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .wrap {
+        width: 100%;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+}
+
+body.safari-mac .search-input-box input[type=date], input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=url], select, textarea {
+    border-radius: 0px !important;
+}
+    
+body.safari-mac .search-input-box input[type=date]:focus, input[type=email]:focus, input[type=number]:focus, input[type=password]:focus, input[type=search]:focus, input[type=tel]:focus, input[type=text]:focus, input[type=url]:focus, select:focus, textarea:focus {
+    border-radius: 0px !important;
+}
+    
+input[type="search"] {
+  -webkit-appearance: none;
+  background-color: #ffffff;
+}
+
+input {
+  -webkit-appearance: none;
+  background-color: #ffffff;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+   height: 14px;
+   width: 14px;
+   display: block;
+   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAn0lEQVR42u3UMQrDMBBEUZ9WfQqDmm22EaTyjRMHAlM5K+Y7lb0wnUZPIKHlnutOa+25Z4D++MRBX98MD1V/trSppLKHqj9TTBWKcoUqffbUcbBBEhTjBOV4ja4l4OIAZThEOV6jHO8ARXD+gPPvKMABinGOrnu6gTNUawrcQKNCAQ7QeTxORzle3+sDfjJpPCqhJh7GixZq4rHcc9l5A9qZ+WeBhgEuAAAAAElFTkSuQmCC);
+  background-repeat: no-repeat;
+  background-size: 14px;
+}/* End custom CSS */
+/* Start custom CSS for section, class: .elementor-element-3d642ff */@media (min-width:600px){
+    .elementor-1562 .elementor-element.elementor-element-3d642ff{max-height:851px;}
+}
+@media(min-width:1920px){
+    .elementor-28 .elementor-element.elementor-element-8289950:not(.elementor-motion-effects-element-type-background){background-image:url(/wp-content/uploads/2021/10/BB-design-r3-Production-BG-1960px-header.png);}
+}/* End custom CSS */
+/* Start custom CSS for heading, class: .elementor-element-b5163d1 */#hidden-Treasuries{display : none;}/* End custom CSS */
+/* Start custom CSS for section, class: .elementor-element-b18c900 */.treasuries{display : none;}/* End custom CSS */
+/* Start custom CSS for section, class: .elementor-element-90aa53c */.custom-colum {
+  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.custom-colum ul {
+    width: 100%;
+    font-family: new-frank, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.title-sectors {
+  display: block;
+  padding: 0px 0px;
+    margin: 0px 0px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.ticker-ul {
+  margin: 0px 0px;
+  padding: 0px 40px;
+  list-style: none;
+}
+
+.ticker-ul li {
+  margin: 0px 0px 20px 0px;
+    padding: 0px 0px 0px 0px;
+  display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.ticker-ul li:last-child {
+    margin: 0px 0px;
+}
+
+.custom-badge {
+  font-family: "New Frank", Sans-serif;
+  font-weight: 600;
+  padding: 5px 30px;
+  margin: 0px 30px 0px 0px;
+  font-size: 24px;
+  color: #fff;
+  background-color: #34AEED;
+  text-transform: uppercase;
+  text-decoration: none;
+  min-width: 130px;
+  display: inline-block;
+  text-align: center;
+}
+
+.custom-badge span {
+   text-transform: uppercase;
+   line-height: 0px;
+}
+
+.ticker-title {
+  padding: 0px 0px;
+  margin: 0px 0px 0px;
+  font-size: 18px;
+  color: #54595F;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 0px;
+  vertical-align: sub;
+}
+
+.ticker-title a {
+  text-decoration: none;
+  line-height: 0px;
+}
+
+.ticker-btn-link {
+    text-align: right;
+    float: right;
+  margin: 0px 20px 0px 10px;
+  line-height: 0px;
+}
+
+.ticker-btn {
+  padding: 0px 0px;
+    margin: 0px 0px;
+    font-size: 20px;
+  color: #34AEED;
+  text-decoration: none;
+  line-height: 0px;
+}
+
+.ticker-btn span {
+  padding: 0px 0px 0px 10px;
+    margin: 0px 0px;
+    color: #00A7DD;
+  text-decoration: none;
+}
+
+.ticker-btn span svg {
+  width: 16px;
+    height: 16px;
+    fill: #34AEED;
+    margin: 0px 0px -2px -5px;
+}
+
+.ticker-btn span svg path {
+    fill: #34AEED;
+}
+
+.ticker-ul li:hover {
+    background-color: #E0E0E0;
+}
+
+.ticker-ul li:hover span .ticker-title {
+  color: #54595F;
+}
+
+.ticker-ul li:hover .ticker-btn-link .ticker-btn {
+  color: #54595F;
+}
+
+.ticker-ul li:hover .ticker-btn-link .ticker-btn span {
+  color: #54595F;
+}
+.ticker-ul li:hover .custom-badge {
+  color: #fff;
+}
+
+.ticker-ul li:hover .ticker-btn span svg path {
+    fill: #54595F;
+}
+
+.custom-badge-green {
+    background-color: #04CDB2;
+}
+
+.ticker-btn-green {
+  color: #04CDB2;
+}
+
+.ticker-btn-green span {
+  color: #04CDB2;
+}
+
+.ticker-btn-green span svg {
+  width: 16px;
+    height: 16px;
+    fill: #04CDB2;
+    margin: 0px 0px -2px -5px;
+}
+
+.ticker-btn-green span svg path {
+    fill: #04CDB2;
+}
+
+.custom-badge-blue {
+    background-color: #00376F;
+}
+
+.ticker-btn-blue {
+  color: #00376F;
+}
+
+.ticker-btn-blue span {
+  color: #00376F;
+}
+
+.ticker-btn-blue span svg {
+  width: 16px;
+    height: 16px;
+    fill: #00376F;
+    margin: 0px 0px -2px -5px;
+}
+
+.ticker-btn-blue span svg path {
+    fill: #00376F;
+}
+
+.local-font {
+    font-size: 30px;
+}
+
+.custom-colum ul .ticker-title-1 {
+  width: 70%;
+  line-height: 0px;
+}
+
+.custom-colum .no_ticker_found {
+  margin: 0px 0px 0px 50px;
+}
+
+.custom-badge-gray {
+    background-color: #919191;
+}
+
+.ticker-btn-gray {
+  color: #919191;
+}
+
+.ticker-btn-gray span {
+  color: #919191;
+}
+
+.ticker-btn-gray span svg {
+  width: 16px;
+    height: 16px;
+    fill: #919191;
+    margin: 0px 0px -2px -5px;
+}
+
+.ticker-btn-gray span svg path {
+    fill: #919191;
+}
+
+@media (max-width: 575.98px) {
+  .custom-badge {
+    margin: 0px 0px 0px 0px;
+    display: block;
+    text-align: center;
+    padding: 4px 30px;
+  }
+  .ticker-btn-link {
+    text-align: left;
+    float: left;
+    margin: 0px 0px 0px 10px;
+  }
+  .ticker-ul {
+      padding: 0px 20px;
+    }
+  .ticker-ul li {
+        margin: 0px 0px 15px 0px;
+        padding: 0px 0px 40px 0px;
+        display: block;
+    }
+    .bblx-product-container {
+    padding: 20px 25px 60px 25px !important;
+  }
+  
+  .ticker-title-1 {
+      margin: 0px 0px 15px 10px;
+  }
+  
+  .ticker-title {
+      max-width: 90%;
+      line-height: 25px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+  }
+  .custom-colum .no_ticker_found {
+    margin: 0px 0px 0px 25px;
+  }
+
+  .custom-colum ul .ticker-title-1 {
+    line-height: normal;
+  }
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .custom-colum ul .ticker-title-1 {
+    line-height: normal;
+  }
+
+  .ticker-title {
+      line-height: normal;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .ticker-ul {
+      padding: 0px 30px;
+      list-style: none;
+  }
+  .ticker-ul li {
+      display: flex;
+      align-items: center;
+      margin: 0px 0px 20px 0px;
+      padding: 0px 0px 0px 0px;
+  }
+  .custom-badge {
+      padding: 18px 30px !important;
+    margin: 0px 15px 0px 0px !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content:center !important;
+      height:auto;
+      min-width: 120px;
+  }
+
+  .ticker-title {
+      font-size: 18px;
+      min-width: 443px;
+      margin: 0px 0px 0px;
+      line-height: normal;
+    } 
+
+    .ticker-btn{
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      line-height: normal;
+    }
+
+    .ticker-btn span {
+      font-size: 23px;
+      padding: 0px 0px 0px 15px;
+  }
+  .bblx-product-container {
+    padding: 0px 10px 60px 10px !important;
+  }
+  
+  .ticker-btn-link {
+    margin: 0px 20px 0px 10px;
+    line-height: normal;
+  }
+
+  .ticker-btn span svg {
+      margin: 0px 0px 0px -5px;
+      vertical-align: middle;
+  }
+
+  .custom-colum .no_ticker_found {
+    margin: 0px 0px 0px 40px;
+  }
+
+  .custom-colum ul .ticker-title-1 {
+    line-height: normal;
+  }
+
+  .custom-badge span {
+      line-height: normal;
+  }
+
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .ticker-ul {
+      padding: 0px 30px;
+  }
+  .ticker-ul li {
+      margin: 0px 0px 20px 0px;
+      padding: 0px 0px 0px 0px;
+      display: flex;
+      align-items: center;
+  }
+  .custom-badge {
+      padding: 5px 30px;
+      margin: 0px 20px 0px 0px;
+      height:auto;
+  }
+  .ticker-title {
+    font-size: 18px;
+    margin: 0px 0px 0px 0px;
+  }
+  .ticker-btn-link {
+    margin: 0px 20px 0px 50px;
+  }
+  .ticker-btn {
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+  }
+  .ticker-title-1 {
+    width: 80%;
+  }
+  
+  .bblx-product-container {
+    padding: 0px 50px 60px 50px !important;
+  }
+  .custom-colum .no_ticker_found {
+    margin: 0px 0px 0px 50px;
+  }
+
+  .ticker-btn span {
+    margin: 0px 0px 0px 0px;
+  }
+
+  .ticker-btn span svg {
+    margin: 0px 0px 0px -5px;
+    vertical-align: super;
+  }
+
+}
+
+@media (min-width: 1178px) and (max-width: 1182px) {
+  .ticker-btn-link {
+      margin: 0px 20px -5px 50px;
+  }
+  
+  body.mac-chrome .ticker-btn-link {
+      margin-bottom:0px;
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 1024px) {
+  .bblx-product-container {
+    padding: 0px 10px 60px 10px !important;
+  }
+
+  .ticker-btn span {
+      padding: 0px 0px 0px 15px;
+      margin: 0px 0px 0px 0px;
+  }
+
+  .ticker-btn-link {
+      margin: 0px 20px -5px 50px;
+  }
+  body.mac-chrome .ticker-btn-link {
+      margin-bottom:0px;
+  }
+}
+
+@media (min-width: 819px) and (max-width: 821px) {
+  .ticker-title {
+      min-width: 496px;
+      margin: 0px 0px 0px 0px;
+      line-height: normal;
+    }
+
+    .custom-badge span {
+      text-transform: uppercase;
+      line-height: normal;
+  }
+
+  .custom-colum ul .ticker-title-1 {
+      line-height: normal;
+  }
+
+  .ticker-btn-link {
+      margin-bottom:-5px;
+  }
+  
+  body.mac-chrome .ticker-btn-link {
+      margin-bottom:0px;
+  }
+
+}
+
+@media (min-width: 910px) and (max-width: 915px) {
+  .ticker-title {
+        min-width: 580px;
+        margin: 0px 0px 0px;
+    }
+}
+
+@media (min-width: 1090px) and (max-width: 1095px) {
+  .bblx-product-container {
+        padding: 0px 10px 60px 10px !important;
+    }
+}
+
+@media (min-width: 1278px) and (max-width: 1281px) {
+  .ticker-btn-link {
+      margin: 0px 20px 0px 10px;
+  }
+}
+
+@media (min-width: 1155px) and (max-width: 1160px) {
+  .ticker-title {
+      margin: 0px 0px 0px 0px;
+  }
+
+  .ticker-btn-link {
+    margin: 0px 20px -5px 50px;
+  }
+}
+
+@media (min-width: 965px) and (max-width: 967px) {
+  .ticker-btn-link {
+      margin: 0px 20px 0px 10px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .bblx-product-container .elementor-container {
+    max-width: 1070px;
+  }
+}
+
+@media (min-width: 1475px) and (max-width: 1480px) {
+  .ticker-title {
+        margin: 0px 0px 0px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .bblx-product-container .elementor-container {
+    max-width: 1070px;
+  }
+}
+
+@media (max-width: 767px) {
+    .elementor-1562 .elementor-element.elementor-element-1c3e6ae0 {
+        padding: 8em 0em 0em 0em !important;
+    }
+    
+    .elementor-1562 .elementor-element.elementor-element-f344628 > .elementor-element-populated {
+        padding: 50px 0px 50px 0px;
+    }
+}
+
+@media (min-width: 1920px) {
+  .ticker-title {
+      margin: 0px 0px 0px;
+  }
+}
+
+body.safari-mac .ticker-title {
+    vertical-align: unset;
+}
+
+body.mac-chrome .ticker-title {
+    vertical-align: unset;
+}/* End custom CSS */
+/* Start custom CSS */.elementor-inner-column.elementor-element{margin-bottom:20px;}
+
+ @media(max-width:1024px){
+     .elementor-column.elementor-col-25{
+         width:50%;
+     }
+}
+.readMore5 {
+    margin-left:auto;
+}
+.readMore6 {
+    margin-left:auto;
+}
+
+
+.elementor-widget-html + .elementor-widget-icon{
+    top:-5px;
+    margin-left: 5px;
+}
+
+.readMore6 a{color:#fff;float:right;font-family:"New Frank", Sans-serif;font-size:.8em;font-weight:600;padding-right:0px;padding-top:10px;}
+
+.elementor-widget-html{
+    margin-left: auto;
+}
+.readMore5 a{color:#fff;float:right;font-family:"New Frank", Sans-serif;font-size:.8em;font-weight:600;padding-right:0px;padding-top:10px;}/* End custom CSS */
+/* Start Custom Fonts CSS */@font-face {
+    font-family: 'New Frank';
+    font-style: normal;
+    font-weight: 400;
+    font-display: auto;
+    src: url('https://bondbloxxstg.wpengine.com/wp-content/uploads/2021/10/FrankNew-Light.eot');
+    src: url('https://bondbloxxstg.wpengine.com/wp-content/uploads/2021/10/FrankNew-Light.eot?#iefix') format('embedded-opentype'),
+        url('https://bondbloxxstg.wpengine.com/wp-content/uploads/2021/10/FrankNew-Light.woff2') format('woff2'),
+        url('https://bondbloxxstg.wpengine.com/wp-content/uploads/2021/10/FrankNew-Light.woff') format('woff'),
+        url('https://bondbloxxstg.wpengine.com/wp-content/uploads/2021/10/FrankNew-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'New Frank';
+    font-style: normal;
+    font-weight: 600;
+    font-display: auto;
+    src: url('https://bondbloxxstg.wpengine.com/wp-content/uploads/2021/10/FrankNew-Medium.eot');
+    src: url('https://bondbloxxstg.wpengine.com/wp-content/uploads/2021/10/FrankNew-Medium.eot?#iefix') format('embedded-opentype'),
+        url('https://bondbloxxstg.wpengine.com/wp-content/uploads/2021/10/FrankNew-Medium.woff2') format('woff2'),
+        url('https://bondbloxxstg.wpengine.com/wp-content/uploads/2021/10/FrankNew-Medium.woff') format('woff'),
+        url('https://bondbloxxstg.wpengine.com/wp-content/uploads/2021/10/FrankNew-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'New Frank';
+    font-style: normal;
+    font-weight: 500;
+    font-display: auto;
+    src: url('https://bondbloxxstg.wpengine.com/wp-content/uploads/2021/10/FrankNew-Medium.eot');
+    src: url('https://bondbloxxstg.wpengine.com/wp-content/uploads/2021/10/FrankNew-Medium.eot?#iefix') format('embedded-opentype'),
+        url('https://bondbloxxstg.wpengine.com/wp-content/uploads/2021/10/FrankNew-Medium.woff2') format('woff2'),
+        url('https://bondbloxxstg.wpengine.com/wp-content/uploads/2021/10/FrankNew-Medium.woff') format('woff'),
+        url('https://bondbloxxstg.wpengine.com/wp-content/uploads/2021/10/FrankNew-Medium.ttf') format('truetype');
+}
+/* End Custom Fonts CSS */
+
+.custom-container { max-width: 1140px; margin-right: auto; margin-left: auto; position: relative;
+	display: -webkit-box; display: -ms-flexbox;display: flex;flex-direction: column;}
+
+.wapper_row { display: flex; flex-direction: row; justify-content: space-between; width: 100%; }
+
+.custom-heading-title {
+  color: #fff;
+  font-family: "New Frank", Sans-serif;
+  font-size: 2.5em;
+  font-weight: 600;
+  line-height: 1.1em;
+  padding: 0;
+  margin: 0;
+}
+
+.search-wrap {
+    width: 80%;
+    position: absolute;
+    top: 0%;
+    left: 59%;
+    transform: translate(-50%, 0%);
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+    height: 47px;
+}
+
+input[type="search"] {
+    -webkit-appearance: none;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: auto;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+    font-size: 16px;
+    border: none !important;
+}
+
+.searchButton {
+    width: auto;
+    height: auto;
+    border: 1px solid #ffffff;
+    text-align: center;
+    color: #24a5e0;
+    background-color: #ffffff;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 20px;
+    border-left: 0px;
+    margin: 0px 0px 0px -1px;
+    padding: 8px 16px;
+}
+
+.searchButton svg {
+  width: 20px;
+  height: 20px;
+}
+
+
+.col-md-6 {
+  width: 50%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 1px;
+}
+
+input[type=date], input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=url], select, textarea {
+    width: 100%;
+    border: 1px solid #666;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.custom-card {
+  background-color: #FFFFFF;
+  transition: background 0s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 50px 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+}
+
+.custom-card-body {
+  width: 100%;
+}
+
+
+.custom-sector {
+  font-family: "New Frank", Sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #24a5e0;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.custom-sector-2 .custom-sector {
+    font-family: "New Frank", Sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #00CFB2;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    margin: 60px 0px 30px;
+}
+
+.custom-sector-3 .custom-sector {
+    font-family: "New Frank", Sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #003E6A;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    margin: 60px 0px 30px;
+}
+
+.custom-sector-4 .custom-sector {
+    font-family: "New Frank", Sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #919191;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    margin: 60px 0px 30px;
+}
+
+/* ============= custom-elementor-container ============ */
+
+.elementor *, .elementor :after, .elementor :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.custom-elementor-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.custom-elementor-column, .custom-elementor-column-wrap {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@media (min-width: 1400px) {
+    .custom-elementor-container {
+        max-width: 1070px;
+    }    
+}
+
+@media (min-width: 768px) {
+    .custom-elementor-column.custom-elementor-col-100, .custom-elementor-column[data-col="100"] {
+        width: 100%;
+    }
+}
+
+
+.ticker-ul {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    list-style: none;
+}
+
+
+.custom-margin-bottom {
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+
+/* ===================== Responsive Media Queries ===================== */
+
+@media (min-width: 1200px) { ... }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .custom-card {
+        padding: 50px 30px;
+    }
+
+    .search-wrap {
+        width: 100%;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .custom-card {
+        padding: 50px 30px;
+    }
+
+    .search-wrap {
+        width: 100%;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    .bblx-product-container {
+        padding: 0px 0px 60px 0px !important;
+    }
+
+    .ticker-ul {
+        padding: 0px 0px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+@media (max-width: 575.98px) {
+    .search-wrap {
+        width: 100%;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .custom-card {
+        padding: 50px 20px;
+    }
+
+    .ticker-ul {
+        padding: 0px 0px;
+    }
+
+    .custom-margin-bottom {
+        display: block;
+    }
+
+    .custom-heading-title {
+        margin-bottom: 40px;
+    }
+
+    .col-md-6 {
+        width: 100%;
+        display: block;
+        margin-bottom: 15px;
+    }
+}
